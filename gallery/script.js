@@ -50,7 +50,7 @@ const prevSlide = () => {
         if (active.previousElementSibling) {
             active.previousElementSibling.classList.toggle('active');
         } else {
-            slides[slides.length - 1].classList.toggle('active');
+            slides[0].classList.toggle('active');
         }
         // End of the changed part
 
