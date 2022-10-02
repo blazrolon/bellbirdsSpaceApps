@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 16.6%;
+  padding: 14px;
+  padding-top:200px;
+  z-index:-5;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: .8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: fixed;
+  display: display-box;
+  left:612px;
+}
+.logo{
+  width: 25%;
+  position: fixed;
+  display: display-box;
+  left: 300px;
+  top:10px;
+}
+.gif {
+position: fixed;
+display: display-box;
+right: 0px;
+top:0px;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: relative;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+body {
+    background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+    /* background: rgba(0, 0, 0, .9); */
+}
+canvas {
+    position:absolute;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #21ef80;
+    text-align: center;
+    font-family: "VT323";
+}
+h2 {
+    font-size: 1.5rem;
+    color: #21ef80;
+    text-align: center;
+    font-family: "VT323";
+}
+

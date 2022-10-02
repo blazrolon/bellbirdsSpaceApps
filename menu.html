@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BellBirdPy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body id = "1">
+    <div class="logo">
+        <img src="src/logomain.png" style="width:50%" />
+    </div>
+    <div>
+        <h1 >Time Traveler's Tale</h1>
+        <h2>CREATE, DREAM, PLAY</h2>
+    </div>
+    <div class="gif">
+        <img src="src/gif.gif" style="width:50%" />
+    </div>
+
+    <canvas id='canvas'></canvas>
+    <script type="text/javascript" src="sprite.js"></script>
+
+    <!-- The four columns -->
+    <div class="row">
+        <div class="column">
+            <img id="primero" src="src/1.png" name style="width:100%" onclick="start(100,segundo,intro);">
+        </div>
+        <div class="column">
+            <img id="segundo" src="src/2.png" style="width:100%" onclick="start(350,tercero,ch1)">   
+        </div>
+        <div class="column">
+            <img id="tercero" src="src/3.png" style="width:100%" onclick="start(600,cuarto,ch2);">
+        </div>
+        <div class="column">
+            <img id="cuarto" src="src/4.png" style="width:100%" onclick="start(850,quinto,ch3);">
+        </div>
+        <div class="column">
+            <img id="quinto" src="src/5.png" style="width:100%" onclick="start(1100,sexto,ch4);">
+        </div>
+        <div class="column">
+            <img id="sexto" src="src/6.png" style="width:100%" onclick="start(1350,sexto,gallery);">
+        </div>
+    </div>
+    <!--
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" width="300" height="300">
+            <div id="imgtext"></div>
+        </div>
+
+        <script>
+            function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+
+                var image = document.getElementsByClassName("image2");
+                var image2 = document.getElementBy("image2");
+                image.src = "3.jpg"
+
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+            }
+        </script> -->
+
+</body>
+    </html>
